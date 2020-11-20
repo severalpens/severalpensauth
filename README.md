@@ -1,5 +1,5 @@
 # severalpensauth
-This is an Auth server application built using [Node](https://nodejs.org [Express Generator](https://expressjs.com/en/starter/generator.html). 
+This is an Auth server application built using [Node](https://nodejs.org) [Express Generator](https://expressjs.com/en/starter/generator.html). 
 
 
 
