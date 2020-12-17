@@ -10,6 +10,8 @@ router.use(cors());
 router.use(bodyParser.json());
 
 router.post("/", function (req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+
   try {
     let log = new LogsModel();
     log.type = 'login';
