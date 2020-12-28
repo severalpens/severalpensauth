@@ -18,7 +18,6 @@ async function addLog(username,result){
 }
 
 router.post("/", async function (req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
   let username = req.body.username;
   let user = await UsersModel.findOne({username}).exec();
   if(user){
@@ -32,7 +31,7 @@ router.post("/", async function (req, res) {
     });
   }
   else{
-    addLog(username, result);  
+    addLog(username, null);  
     res.statusCode = 401;
     res.send('User not found');
   }
